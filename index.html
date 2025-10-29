@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santhosh Venketraman | iOS Developer Portfolio</title>
+
+  <style>
+    /* --- RESET & GLOBALS --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+    }
+    a { color: #007aff; text-decoration: none; }
+
+    /* --- HEADER --- */
+    header {
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #007aff;
+    }
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* --- SECTIONS --- */
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* --- ABOUT --- */
+    #about {
+      text-align: center;
+    }
+    #about img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #007aff;
+      margin-bottom: 1rem;
+    }
+
+    /* --- PROJECTS --- */
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3 {
+      color: #007aff;
+      margin-bottom: 0.5rem;
+    }
+    .project p {
+      color: #555;
+    }
+    .tags {
+      margin-top: 0.8rem;
+    }
+    .tag {
+      background: #e6f0ff;
+      color: #007aff;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+      margin-right: 0.3rem;
+      font-size: 0.85rem;
+    }
+
+    /* --- CONTACT --- */
+    #contact {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    #contact a {
+      background: #007aff;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background 0.2s;
+    }
+    #contact a:hover {
+      background: #005ec2;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      section { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Santhosh Venketraman</h1>
+    <p>iOS Developer | Swift • SwiftUI • Combine</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <img src="https://via.placeholder.com/120" alt="Profile photo">
+    <h2>About Me</h2>
+    <p>
+      I'm an iOS developer passionate about creating elegant, user-friendly mobile apps
+      using Swift and SwiftUI. I focus on clean architecture, smooth animations,
+      and delightful user experiences.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>TaskMaster</h3>
+      <p>A productivity app that helps users manage daily tasks efficiently.
+         Includes Core Data, MVVM, and SwiftUI animations.</p>
+      <div class="tags">
+        <span class="tag">SwiftUI</span>
+        <span class="tag">Core Data</span>
+        <span class="tag">MVVM</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>WeatherNow</h3>
+      <p>A live weather application using OpenWeatherMap API with Combine-based networking and SwiftUI charts.</p>
+      <div class="tags">
+        <span class="tag">Swift</span>
+        <span class="tag">Combine</span>
+        <span class="tag">API</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>FitTrack</h3>
+      <p>Workout tracking app featuring HealthKit integration and goal visualization using Swift Charts.</p>
+      <div class="tags">
+        <span class="tag">HealthKit</span>
+        <span class="tag">Swift Charts</span>
+        <span class="tag">SwiftUI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Let’s connect! I’m open to collaboration, freelance, or full-time opportunities.</p>
+    <a href="mailto:santhosh@example.com">📧 Email Me</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Santhosh Venketraman — Built with ❤️ using HTML & CSS
+  </footer>
+
+</body>
+</html>
